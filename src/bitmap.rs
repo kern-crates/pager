@@ -64,7 +64,6 @@ impl<const N: usize> Debug for Bitmap<N> {
 
 impl<const N: usize> Bitmap<N> {
     /// after new, you should init
-    #[allow(unused)]
     pub const fn new() -> Self {
         Self {
             current: 0,
@@ -211,6 +210,8 @@ impl<const N: usize> PageAllocator for Bitmap<N> {
                 self.max,
                 bitmap_pages
             );
+        }else {
+            pprintln!("Bitmap manage {} pages using {} bytes", self.max, N);
         }
         self.start = start_page;
         Ok(())
