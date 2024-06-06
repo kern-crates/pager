@@ -1,0 +1,10 @@
+{
+    "name": "pager",
+    "description": "bitmap and buddy page allocator",
+    "authors": [{
+      "name": "chenlinfeng ",
+      "email": "chenlinfeng25@outlook.com"
+    }],
+    "keywords": ["bitmap", "buddy", "page allocator"],
+    "doc_url": "https://github.com/kern-crates/pager/blob/main/README.md"
+  }
